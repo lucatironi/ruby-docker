@@ -13,3 +13,5 @@ Build the docker image:
 Run the newly created image on port 8080:
 
     docker run -p 8080:8080 myapp
+
+Visit [http://localhost:8080](http://localhost:8080) to see the result.
