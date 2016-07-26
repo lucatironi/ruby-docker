@@ -7,8 +7,8 @@ ENV APPSERVER puma
 ENV RACK_ENV production
 
 WORKDIR $APP_ROOT
-ADD Gemfile /app/Gemfile
-ADD Gemfile.lock /app/Gemfile.lock
+ADD Gemfile $APP_ROOT/Gemfile
+ADD Gemfile.lock $APP_ROOT/Gemfile.lock
 RUN ["bundle", "install", "-j4"]
 ADD . $APP_ROOT
 
